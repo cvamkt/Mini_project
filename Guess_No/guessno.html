@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>guess_number</title>
+</head>
+<style>
+    body{
+        background-color: #7a7a7a;
+        color: #fff;
+    }
+    #wrapper{
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+    }
+    .form{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 10px;
+    }
+    #guess{
+        font-size: 60px;
+        font-family: sans-serif;
+    }
+    #guessfield{
+        width: 250px;
+        border: none;
+        border-radius:3px ;
+    }
+    #subt{
+        background-color: black;
+        color: #fff;
+        padding: 5px;
+        padding-left: 30px;
+        padding-right: 30px;
+        border: none;
+        border-radius: 3px;
+        
+    }
+</style>
+<body>
+    <div id="wrapper">
+        <h1>Number Guessing Game</h1>
+        <p>Try And Guess Random number between 1 and 100.</p>
+        <p>You Have 10 attempt to Guess the right number.</p>
+    
+</br>
+<form class="form">
+    <label for="Guessfield" id="guess">Guess a number</label>
+    <input type="text" id="Guessfield" class="guessfield">
+    <input type="submit" id="subt" class="submitguess" value="Submit guess">
+</form>
+ 
+<div class="resultParse">
+    <p>Previous Guesses: <span class="Guesses"></span></p>
+    <p>Guesses Remaining: <span class="lastResult">10</span></p>
+    <p class="loworhi"></p>
+</div>
+</div>
+</body>
+<script src="guessno.js"></script>
+</html>

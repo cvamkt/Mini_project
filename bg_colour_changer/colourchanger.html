@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>bgcolor_changer</title>
+</head>
+<style>
+    .button_container{
+        text-align: center;
+    }
+    .button{
+        text-align: center;
+        display: inline-block;
+        margin: 2px;
+      margin-right: 10px;
+        height: 100px;
+        width: 100px;
+        border: solid;
+        
+    }
+    #grey{
+        background-color: gray;
+    }
+    #green{
+        background-color: green;
+    }
+    #black{
+        background-color: black;
+    }
+    #blue{
+        background-color: blue;
+    }
+    .head{
+        text-align: center;
+        font-family: sans-serif;
+    }
+    .container{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    
+    }
+</style>
+<body>
+<div class="container">
+    <h1 class="head">color scheme switcher</h1>
+    <div class="button_container">
+    <span class="button" id="grey"></span>
+    <span class="button" id="black"></span>
+    <span class="button" id="green"></span>
+    <span class="button" id="blue"></span>
+</div>
+    <h2 class="head">try clciking on one of them to change bg_colour</h2>
+</div>
+</body>
+<script src="colurchnager.js"></script>
+</html>

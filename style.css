@@ -1,0 +1,31 @@
+body{
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #e7eff5;
+}
+.container{
+    text-align: center;
+}
+.container h2{
+    background-color: black;
+    padding: 20px;
+    border-radius: 10px;
+    color: white;
+}
+.btn{
+    margin-left: 20px;
+    padding: 5px;
+    outline: none;
+    cursor: pointer;
+}
+.color{
+    font-size: 20px;
+    color: rgb(12,83,107);
+}
+.btn:hover{
+    background-color: black;
+    color: white;
+    transition: all 0.3s ease-in-out;
+}
